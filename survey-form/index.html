@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form
+    </title>
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form
+    </h1>
+    <p id="description">
+        Thank you for taking the time to help us improve the platform
+    </p>
+
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name<input required id="name" type="text" placeholder="Enter your name">
+            </label>
+            <label id="email-label">Email<input required id="email" type="email" placeholder="Seu melhor email">
+            </label>
+            <label id="number-label">Age
+                <span class="clue">(optional)</span><input id="number" type="number" min="0" max="100"
+                    placeholder="1-100">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <select type="dropdown" id="dropdown">
+                <option>1</option>
+                <option>2</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <label for="catdog"><input type="radio" name="catdog" value="cat">Cat</label>
+            <label for="catdog"><input type="radio" name="catdog" value="dog">Dog</label>
+        </fieldset>
+
+        <fieldset>
+            <label><input type="checkbox" checked value="orange">Orange</label>
+            <label for="fruits"><input type="checkbox" value="apple">Apple</label>
+            <label for="fruits"><input type="checkbox" value="apple">Lemon</label>
+        </fieldset>
+
+        <fieldset>
+            <p>Any comments or suggestions?</p>
+            <textarea class="input-textarea" placeholder="Enter your comment here..."></textarea>
+            <button class="submit-button" type="submit" id="submit">Submit</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
